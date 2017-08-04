@@ -1,34 +1,30 @@
-
 @extends("layout.main")
-
 @section("content")
-
-
     <div class="col-sm-8 blog-main">
         <div class="blog-post">
             <div style="display:inline-flex">
                 <h2 class="blog-post-title">{{$post->title}}</h2>
-                @if (Auth::user()->can('update', $post))
+                {{--@if (Auth::user()->can('update', $post))--}}
                     <a style="margin: auto"  href="/posts/{{$post->id}}/edit">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     </a>
-                @endif
-                @if (Auth::user()->can('update', $post))
+                {{--@endif--}}
+                {{--@if (Auth::user()->can('update', $post))--}}
                     <a style="margin: auto"  href="/posts/{{$post->id}}/delete">
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </a>
-                @endif
+                {{--@endif--}}
             </div>
 
-            <p class="blog-post-meta">{{$post->created_at->toFormattedDateString()}} by <a href="#">{{$post->user->name}}</a></p>
+            <p class="blog-post-meta">{{$post->created_at->toFormattedDateString()}} by <a href="#">xixi</a></p>
 
             <p>{!! $post->content !!}</p>
             <div>
-                @if($post->zan(\Auth::id())->exists())
+                {{--@if($post->zan(\Auth::id())->exists())--}}
                     <a href="/posts/{{$post->id}}/unzan" type="button" class="btn btn-default btn-lg">取消赞</a>
-                @else
+                {{--@else--}}
                     <a href="/posts/{{$post->id}}/zan" type="button" class="btn btn-primary btn-lg">赞</a>
-                @endif
+                {{--@endif--}}
 
             </div>
         </div>

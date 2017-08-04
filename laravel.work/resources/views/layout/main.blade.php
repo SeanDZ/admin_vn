@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="MESUY3topeHgvFqsy9EcM916UWQq6khiGHM91wHy">
 
 
-    <title>laravel.work</title>
+    <title>laravel.works</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,6 @@
     <!-- Custom styles for this template -->
     <link href="/public/home/css/blog.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/home/css/wangEditor.min.css">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
