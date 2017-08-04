@@ -37,7 +37,7 @@ class PostController extends Controller
                 ]);
             $data = $request->input('Post');
             $post = new Post();
-            $post->title = $data['title'];
+            $post->title = $data['title'];//$post->title = request('title'),view需要修改Post['title']=>title
             $post->content = $data['content'];
             if($post->save()){
                 return redirect('post/index')->with('success','添加成功！');
